@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 50;
+  padding: 20px;
+  background-color: #87CEEB; /* Color de fondo del cielo */
+}
+
+h1 {
+  text-align: center;
+  color: #111111; /* Color del texto en el cielo */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #111111; /* Color del texto en el cielo */
+}
+
+input[type="number"],
+input[type="text"],
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #8400ff;
+  color: white;
+  cursor: pointer;
+}
+
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+/* Resultados */
+
+  #result_s_y::before {
+    content: "σ y: "; /* Carácter sigma con subíndice y */
+    font-weight: bold;
+  }
+
+  #result_s_z::before {
+    content: "σ z: "; /* Carácter sigma con subíndice z */
+    font-weight: bold;
+  }
+
+#sidebar {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+#sidebar-text {
+  background-color: white; /* Cambiar a otro color si se desea */
+  text-align: justify;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#authors-line {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  color: #777777;
+}
+
+#resultados-container {
+  background-color: #77777746;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.container-highlight {
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFFFFF; /* Color de fondo del contenedor */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2); /* Sombreado del contenedor */
+}
+
+.estabilidad-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.estabilidad-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #8400ff;
+  color: white;
+}
+
+.estabilidad-button:focus {
+  outline: none;
+}
+
+.estabilidad-button:hover {
+  background-color: #7a7a7a;
+}
+
+.estabilidad-button.selected {
+  background-color: #FFA500; /* Color del botón seleccionado */
+}

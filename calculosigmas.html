@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coeficientes de dispersión</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="C:\Users\Usuario\Documents\UNICEN\1er Cuatrimestre 2023\Contaminación atmosférica\CalculoConcentracion\Web\icono.png">
+</head>
+<body>
+    <div id="sidebar">
+      <p id="sidebar-text">Los coeficientes de Turner indican cuánto se ha dispersado la cantidad inicial de contaminantes cuando el penacho alcanza una distancia x desde la fuente de emisión. 
+      <p id ="sidebar-text">Los coeficientes han sido evaluados a partir de diversos experimentos de difusión en la atmósfera usando sustancias trazadoras como también de fuentes existentes. Se encontró una fuerte dependencia según el tipo de condición atmosférica.
+      </p>
+      <p id="sidebar-text">La calculadora hace las cuentas a partir de estudios usando las ecuaciones y coeficientes de <a href="https://www.tandfonline.com/doi/abs/10.1080/00022470.1976.10470238" target="_blank">Martin (1976)</a>.</p>
+    </p>
+      </div>
+    <div id="container" class="container-highlight">
+      <h1>Calculadora de coeficientes de dispersión de Turner</h1>
+  
+      <label for="x">Distancia desde la fuente emisora (metros):</label>
+      <input type="number" id="x">
+      <label>Estabilidad atmosférica de Pasquill:</label>
+      <div class="estabilidad-buttons">
+        <button id="btnA" class="estabilidad-button" onclick="setEstabilidad('A')">A</button>
+        <button id="btnB" class="estabilidad-button" onclick="setEstabilidad('B')">B</button>
+        <button id="btnC" class="estabilidad-button" onclick="setEstabilidad('C')">C</button>
+        <button id="btnD" class="estabilidad-button" onclick="setEstabilidad('D')">D</button>
+        <button id="btnE" class="estabilidad-button" onclick="setEstabilidad('E')">E</button>
+        <button id="btnF" class="estabilidad-button" onclick="setEstabilidad('F')">F</button>
+      </div>
+  
+      <button onclick="calculateSigmas()">Calcular</button>
+  
+      <h2>Resultados:</h2>
+      <p><span id="result_s_y"></span></p>
+      <p><span id="result_s_z"></span></p>
+
+      <script src="sigmas.js"></script>
+      <script src="calculateSigmas.js"></script>
+    </div>
+    <div id="authors-line">Creado por: Ingrid Ellehoj, Manuel Peña Moules</div>
+</body>
+</html>
