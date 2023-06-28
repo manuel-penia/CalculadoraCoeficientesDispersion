@@ -1,3 +1,3 @@
-theme: Modelo gaussiano de dispersion 
+theme: jekyll-theme-minimal 
 title: Calculadora-CoeficientesDispersion
 description: Este proyecto permite calcular los coeficientes de dispersión del modelo gaussiano de contaminates de manera sencilla e interactiva.
